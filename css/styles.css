@@ -21,6 +21,12 @@ img {
 .text-center {
   text-align: center;
 }
+.color-text {
+  color: #8236cb;
+}
+.margin-title {
+  margin-bottom: 2rem;
+}
 /* Header y navegation */
 .title {
   font-weight: 600;
@@ -208,4 +214,131 @@ img {
 }
 .wrapper-footer p {
   text-align: center;
+}
+
+/* Página de nosotros */
+.contenido-nosotros {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
+  gap: 2rem;
+}
+.contenido-nosotros .info-about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*pagina de blog */
+.us-blog {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 4rem;
+}
+
+.article {
+  border-bottom: 2px solid #e1e1e1;
+  padding-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+.entrada-article {
+  width: 55rem;
+  margin: 0 auto;
+}
+.article:last-child {
+  border: none;
+}
+.article h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.article .article-meta {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.article-meta p {
+  font-weight: 600;
+}
+.article-meta span {
+  color: #8236cb;
+}
+.article .entrada-blog p {
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+.btn {
+  display: block;
+  width: 24rem;
+  text-align: center;
+  background-color: #5f7a61;
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  transition: background-color ease-out 0.5s;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #485d4a;
+  transition: background-color ease-out 0.5s;
+}
+
+.list-articles h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.list-articles ul {
+  list-style: circle;
+}
+/* galeria */
+.list-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.list-gallery img {
+  width: 40rem;
+  height: 40rem;
+  object-fit: cover;
+}
+/* Formulario */
+
+.formulario {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.formulario fieldset {
+  border: 1px solid #e1e1e1;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+.formulario legend {
+  background-color: #8236cb;
+  color: #ffffff;
+  width: 58rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.6rem 0;
+  margin-bottom: 2rem;
+}
+.wrapper-input {
+  display: flex;
+  margin-top: 1.5rem;
+}
+.wrapper-input label {
+  flex-basis: 10rem;
+}
+.wrapper-input .input {
+  flex: 1;
+  border: 1px solid #e1e1e1;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
